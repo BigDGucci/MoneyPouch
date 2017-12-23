@@ -1,8 +1,8 @@
-name: MoneyPouch
+name: OPMoneyPouches
 main: MoneyPouch\Main
 version: 1.0
 api: [3.0.0-ALPHA8, 3.0.0-ALPHA9]
-author: ShadowLessMCPE
+author: DarkkzMC
 description: MoneyPouch
 commands:
  moneypouch:
