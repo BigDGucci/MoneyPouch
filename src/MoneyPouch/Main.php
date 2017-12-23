@@ -49,7 +49,7 @@ class Main extends PluginBase implements Listener {
 							$tier1 = Item::get(Item::ENDER_CHEST, 101, 1);
 							$tier1->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
 							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "1" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$10,000 - $25,000");
+							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$100,000 - $250,000");
 							
 							$player->getInventory()->addItem($tier1);
 							
@@ -60,7 +60,7 @@ class Main extends PluginBase implements Listener {
 							$tier2 = Item::get(Item::ENDER_CHEST, 102, 1);
 							$tier2->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
 							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "2" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$25,000 - $50,000");
+							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$250,000 - $500,000");
 							
 							$player->getInventory()->addItem($tier2);
 							
@@ -71,7 +71,7 @@ class Main extends PluginBase implements Listener {
 							$tier3 = Item::get(Item::ENDER_CHEST, 103, 1);
 							$tier3->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
 							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "3" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$50,000 - $100,000");
+							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$500,000 - $1,000,000");
 							
 							$player->getInventory()->addItem($tier3);
 							
@@ -82,7 +82,7 @@ class Main extends PluginBase implements Listener {
 							$tier4 = Item::get(Item::ENDER_CHEST, 104, 1);
 							$tier4->setCustomName(TF::RESET . TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
 							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "4" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$100,000 - $500,000");
+							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$1,000,000 - $5,000,000");
 							
 							$player->getInventory()->addItem($tier4);
 							
@@ -93,7 +93,7 @@ class Main extends PluginBase implements Listener {
 							$tier5 = Item::get(Item::ENDER_CHEST, 105, 1);
 							$tier5->setCustomName(TF::BOLD . TF::LIGHT_PURPLE . "Money Pouch" . TF::RESET . TF::GRAY . " (Tap anywhere)" . PHP_EOL . PHP_EOL . 
 							TF::DARK_GRAY . " *" . TF::AQUA . " Tier Level: " . TF::GRAY . "5" . PHP_EOL .
-							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$500,000 - $1,000,000");
+							TF::DARK_GRAY . " *" . TF::AQUA . " Amount to win: " . TF::GRAY . "$5,000,000 - $10,000,000");
 							
 							$player->getInventory()->addItem($tier5);
 							
@@ -134,7 +134,7 @@ class Main extends PluginBase implements Listener {
 				case 101:
 				
 				$tier1 = Item::get(Item::ENDER_CHEST, 101, 1);
-				$tier1win = rand(10000, 25000);
+				$tier1win = rand(100000, 250000);
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier1win);
 				
@@ -146,7 +146,7 @@ class Main extends PluginBase implements Listener {
 				case 102:
 				
 				$tier2 = Item::get(Item::ENDER_CHEST, 102, 1);
-				$tier2win = rand(25000, 50000);
+				$tier2win = rand(250000, 500000);
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier2win);
 				
@@ -158,7 +158,7 @@ class Main extends PluginBase implements Listener {
 				case 103:
 				
 				$tier3 = Item::get(Item::ENDER_CHEST, 103, 1);
-				$tier3win = rand(50000, 100000);
+				$tier3win = rand(500000, 1000000);
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier3win);
 				
@@ -170,7 +170,7 @@ class Main extends PluginBase implements Listener {
 				case 104:
 				
 				$tier4 = Item::get(Item::ENDER_CHEST, 104, 1);
-				$tier4win = rand(100000, 500000);
+				$tier4win = rand(1000000, 5000000);
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier4win);
 				
@@ -182,7 +182,7 @@ class Main extends PluginBase implements Listener {
 				case 105:
 				
 				$tier5 = Item::get(Item::ENDER_CHEST, 105, 1);
-				$tier5win = rand(500000, 1000000);
+				$tier5win = rand(5000000, 10000000);
 				
 				EconomyAPI::getInstance()->addMoney($player, $tier5win);
 				
